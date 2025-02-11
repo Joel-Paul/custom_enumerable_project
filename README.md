@@ -68,7 +68,7 @@ The following table has the methods you will need to implement along with their 
 
 | Method                          | Spec File                       | Notes                                                                 | Implemented? |
 | ------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------ |
-| `Array#my_each`                 | spec/my_each_spec.rb            | You will define my_each on the Array class in `lib/my_enumerables.rb` |      ❌      |
+| `Array#my_each`                 | spec/my_each_spec.rb            | You will define my_each on the Array class in `lib/my_enumerables.rb` |      ✔️      |
 | `Enumerable#my_each_with_index` | spec/my_each_with_index_spec.rb |                                                                       |      ❌      |
 | `Enumerable#my_select`          | spec/my_select_spec.rb          |                                                                       |      ❌      |
 | `Enumerable#my_all?`            | spec/my_all_spec.rb             |                                                                       |      ❌      |
