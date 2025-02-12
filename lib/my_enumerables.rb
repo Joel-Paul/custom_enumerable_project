@@ -21,4 +21,12 @@ module Enumerable
       index += 1
     end
   end
+
+  def my_select
+    selection = []
+    self.each do |elem|
+      selection << elem if yield elem
+    end
+    selection
+  end
 end
