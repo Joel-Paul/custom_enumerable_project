@@ -29,4 +29,9 @@ module Enumerable
     end
     selection
   end
+
+  def my_all?
+    self.each { |elem| return false unless yield elem }
+    true
+  end
 end
