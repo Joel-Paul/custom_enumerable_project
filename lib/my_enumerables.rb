@@ -34,4 +34,9 @@ module Enumerable
     self.each { |elem| return false unless yield elem }
     true
   end
+
+  def my_any?
+    self.each { |elem| return true if yield elem }
+    false
+  end
 end
