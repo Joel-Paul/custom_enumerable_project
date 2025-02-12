@@ -39,4 +39,9 @@ module Enumerable
     self.each { |elem| return true if yield elem }
     false
   end
+
+  def my_none?
+    self.each { |elem| return false if yield elem }
+    true
+  end
 end
