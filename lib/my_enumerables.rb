@@ -12,3 +12,9 @@ class Array
     self.each { |elem| yield elem }
   end
 end
+
+module Enumerable
+  def my_each_with_index
+    self.each_with_index { |elem, index| yield(elem, index) }
+  end
+end
