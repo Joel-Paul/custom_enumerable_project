@@ -44,4 +44,14 @@ module Enumerable
     self.each { |elem| return false if yield elem }
     true
   end
+
+  def my_count
+    count = 0
+    self.each do |elem|
+      if (block_given? and yield elem) or not block_given?
+        count += 1
+      end
+    end
+    count
+  end
 end
