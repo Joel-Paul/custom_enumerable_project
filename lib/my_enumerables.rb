@@ -15,6 +15,10 @@ end
 
 module Enumerable
   def my_each_with_index
-    self.each_with_index { |elem, index| yield(elem, index) }
+    index = 0
+    self.each do |elem|
+      yield(elem, index)
+      index += 1
+    end
   end
 end
