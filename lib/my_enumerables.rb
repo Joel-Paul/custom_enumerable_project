@@ -62,4 +62,11 @@ module Enumerable
     end
     mapped
   end
+
+  def my_inject(value=0)
+    self.each do |elem|
+      value = yield(value, elem)
+    end
+    value
+  end
 end
