@@ -54,4 +54,12 @@ module Enumerable
     end
     count
   end
+
+  def my_map
+    mapped = []
+    self.each do |elem|
+      mapped << yield(elem)
+    end
+    mapped
+  end
 end
